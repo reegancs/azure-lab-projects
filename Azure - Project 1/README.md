@@ -1,3 +1,20 @@
+# Azure Lab Project  
+
+This project shows how I set up some core Azure resources like a Resource Group, Virtual Network, NSG, Virtual Machine and a Storage Account. I also added some basic security steps and documented the whole process.
+
+---
+
+## Overview  
+
+What I Wanted to Do
+- Get hands on practice setting up key Azure resources from scratch
+- Lock things down with NSG rules and by limiting SSH access to just my IP
+- Setup up a Linux VM and make sure I could connect to it
+- Export ARM templates so I could easily recreate everything later if needed
+- Write up what I did so I can show it as part of my portfolio
+
+---
+
 ## Resource Group  
 
 **Screenshot:**  
@@ -71,3 +88,44 @@
 - [Storage Account Template](./Azure%20-%20Project%201/Azure%20-%20Storage%20Account/storage-account-deployment/deployment.json)  
 
 Exported all resources as ARM templates so the entire lab setup can be quickly redeployed in the future or shared as infrastructure-as-code.
+
+---
+
+## Security Measures  
+
+- Restricted SSH access to my IP only 
+- Enabled soft delete and versioning for blob storage to protect against accidental deletion 
+- Used NSG to limit inbound connections to block unwanted access attempts  
+- Chose least privilege (e.g., public access on storage) to keep sensitive files secure
+
+---
+
+## Design Decisions & Reasoning  
+
+This section explains why I made the choices I did:  
+
+- Resource Group: Chose UK South for low latency and compliance.  
+- VNet: Left default 10.0.0.0/16 — big enough for multiple subnets (anything more would be too complicated for this test lab).  
+- DDoS Protection & Firewall: Left off to avoid extra cost (would be on in production).  
+- NSG: Restricted SSH access to my IP only to avoid brute force attacks.  
+- VM Size: Used B1s to keep costs low but still allow me to connect via SSH and manage the VM with no issues.  
+- Authentication: Used password login for simplicity (would use SSH keys in real-world as more secure).  
+- Auto Shutdown: Prevented wasting credits by shutting VM down at night.  
+- Defender for Cloud: Enabled the free tier for baseline security recommendations.  
+- Storage Account: Disabled public network access, used TLS 1.2 and enabled soft delete + versioning to protect data from accidental deletion.  
+- Encryption: Used Microsoft managed keys for simplicity but I am aware CMK is available for extra control.    
+
+---
+
+## Cleanup  
+
+All resources were deleted after testing to avoid unnecessary costs.  
+
+---
+
+## Key Takeaways  
+
+- Got hands on experience building and securing Azure resources.  
+- Practiced using the portal, setting up NSGs and logging into a VM.  
+- Successfully exported and documented ARM templates.  
+- Built confidence in creating reproducible and secure cloud environments.  
