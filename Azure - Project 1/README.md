@@ -93,10 +93,10 @@ Exported all resources as ARM templates so the entire lab setup can be quickly r
 
 ## Security Measures  
 
-- Restricted SSH access to my IP only 
-- Enabled soft delete and versioning for blob storage to protect against accidental deletion 
+- Restricted SSH access to my IP only  
+- Enabled soft delete and versioning for blob storage to protect against accidental deletion  
 - Used NSG to limit inbound connections to block unwanted access attempts  
-- Chose least privilege (e.g., public access on storage) to keep sensitive files secure
+- Chose least privilege (e.g., public access on storage) to keep sensitive files secure  
 
 ---
 
