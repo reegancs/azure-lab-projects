@@ -1,0 +1,116 @@
+[
+  {
+    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-jammy-2-20250918181302/operations/3507EB4733A4964E",
+    "operationId": "3507EB4733A4964E",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-09-18T17:20:48.1488943Z",
+      "duration": "PT12.9535683S",
+      "trackingId": "d806587f-f0f1-48ba-96bc-f00e64cc3a0c",
+      "statusCode": "Created",
+      "targetResource": {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.DevTestLab/schedules/shutdown-computevm-AzureProjectVM",
+        "resourceType": "Microsoft.DevTestLab/schedules",
+        "resourceName": "shutdown-computevm-AzureProjectVM"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-jammy-2-20250918181302/operations/3B95F637DF59F320",
+    "operationId": "3B95F637DF59F320",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-09-18T17:21:00.2001758Z",
+      "duration": "PT1M24.4614692S",
+      "trackingId": "77455a8b-208b-4b49-bb96-d4c4f0b15bc6",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Compute/virtualMachines/AzureProjectVM/extensions/HealthExtension",
+        "resourceType": "Microsoft.Compute/virtualMachines/extensions",
+        "resourceName": "AzureProjectVM/HealthExtension"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-jammy-2-20250918181302/operations/B91749326015FD17",
+    "operationId": "B91749326015FD17",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-09-18T17:20:48.1488943Z",
+      "duration": "PT11.9691909S",
+      "trackingId": "e86c5084-8cd7-4143-ab46-30383913b637",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Compute/virtualMachines/AzureProjectVM",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "AzureProjectVM"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-jammy-2-20250918181302/operations/4F53F6218E16EBC9",
+    "operationId": "4F53F6218E16EBC9",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-09-18T17:20:48.1488943Z",
+      "duration": "PT1.2988446S",
+      "trackingId": "a757fb46-9432-42fd-b792-a998e4b13b61",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Network/networkInterfaces/azureprojectvm403",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "azureprojectvm403"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-jammy-2-20250918181302/operations/086E7951F52AB925",
+    "operationId": "086E7951F52AB925",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-09-18T17:20:46.0959465Z",
+      "duration": "PT1.718017S",
+      "trackingId": "3e6f85e4-63f2-4cfc-a152-af5f0bd804fc",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Network/publicIpAddresses/AzureProjectVM-ip",
+        "resourceType": "Microsoft.Network/publicIpAddresses",
+        "resourceName": "AzureProjectVM-ip"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-jammy-2-20250918181302/operations/92BCD240E7DF0116",
+    "operationId": "92BCD240E7DF0116",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-09-18T17:20:46.0959465Z",
+      "duration": "PT1.9825192S",
+      "trackingId": "4ed5fd0a-26da-4b8e-a086-34be44af1516",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Network/networkSecurityGroups/AzureProjectVM-nsg",
+        "resourceType": "Microsoft.Network/networkSecurityGroups",
+        "resourceName": "AzureProjectVM-nsg"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-jammy-2-20250918181302/operations/08584433908400623780",
+    "operationId": "08584433908400623780",
+    "properties": {
+      "provisioningOperation": "EvaluateDeploymentOutput",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-09-18T17:22:24.7183074Z",
+      "duration": "PT0.0683373S",
+      "trackingId": "72804b26-d5c6-441b-8092-ea8cbc71db35",
+      "statusCode": "OK"
+    }
+  }
+]

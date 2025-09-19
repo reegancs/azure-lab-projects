@@ -1,0 +1,284 @@
+{
+  "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Resources/deployments/AzureProject-VNet-1758208999607",
+  "name": "AzureProject-VNet-1758208999607",
+  "type": "Microsoft.Resources/deployments",
+  "properties": {
+    "templateHash": "3673581869071596766",
+    "parameters": {
+      "location": {
+        "type": "String",
+        "value": "uksouth"
+      },
+      "extendedLocation": {
+        "type": "Object",
+        "value": {}
+      },
+      "virtualNetworkName": {
+        "type": "String",
+        "value": "AzureProject-VNet"
+      },
+      "tagsByResource": {
+        "type": "Object",
+        "value": {
+          "Microsoft.Network/virtualNetworks": {
+            "Environment": "Lab"
+          },
+          "Microsoft.Network/ddosProtectionPlans": {
+            "Environment": "Lab"
+          },
+          "Microsoft.Network/publicIPAddresses": {
+            "Environment": "Lab"
+          },
+          "Microsoft.Network/azureFirewalls": {
+            "Environment": "Lab"
+          },
+          "Microsoft.Network/bastionHosts": {
+            "Environment": "Lab"
+          },
+          "Microsoft.Network/natGateways": {
+            "Environment": "Lab"
+          },
+          "Microsoft.Network/publicIPPrefixes": {
+            "Environment": "Lab"
+          },
+          "Microsoft.Network/networkSecurityGroups": {
+            "Environment": "Lab"
+          }
+        }
+      },
+      "addressSpace": {
+        "type": "Object",
+        "value": {
+          "addressPrefixes": [
+            "10.0.0.0/16"
+          ]
+        }
+      },
+      "encryptionEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "encryptionEnforcement": {
+        "type": "String",
+        "value": "AllowUnencrypted"
+      },
+      "subnets": {
+        "type": "Array",
+        "value": [
+          {
+            "name": "default",
+            "properties": {
+              "addressPrefixes": [
+                "10.0.0.0/24"
+              ]
+            }
+          }
+        ]
+      },
+      "ddosProtectionPlanEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "firewallEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "bastionEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "ddosProtectionPlanIsNew": {
+        "type": "Bool",
+        "value": false
+      },
+      "firewallPublicIpAddressIsNew": {
+        "type": "Bool",
+        "value": false
+      },
+      "firewallPolicyIsNew": {
+        "type": "Bool",
+        "value": false
+      },
+      "firewallPolicyManagementPublicIPAddressIsNew": {
+        "type": "Bool",
+        "value": false
+      },
+      "bastionPublicIpAddressIsNew": {
+        "type": "Bool",
+        "value": false
+      },
+      "bastionNsgIsNew": {
+        "type": "Bool",
+        "value": false
+      },
+      "ddosProtectionPlanName": {
+        "type": "String",
+        "value": "##ddos-protection-plan-name-not-set##"
+      },
+      "ddosProtectionPlanId": {
+        "type": "String",
+        "value": "##ddos-protection-plan-id-not-set##"
+      },
+      "firewallName": {
+        "type": "String",
+        "value": "##firewall-name-not-set##"
+      },
+      "firewallSkuTier": {
+        "type": "String",
+        "value": "Standard"
+      },
+      "firewallPublicIpAddressName": {
+        "type": "String",
+        "value": "##firewall-public-ip-name-not-set##"
+      },
+      "firewallPublicIpAddressId": {
+        "type": "String",
+        "value": ""
+      },
+      "firewallPolicyName": {
+        "type": "String",
+        "value": "##firewall-policy-name-not-set##"
+      },
+      "firewallPolicyId": {
+        "type": "String",
+        "value": "##firewall-policy-id-not-set##"
+      },
+      "firewallPolicyTier": {
+        "type": "String",
+        "value": "Standard"
+      },
+      "firewallPolicyManagementPublicIPAddressName": {
+        "type": "String",
+        "value": "##firewall-policy-management-public-i-p-address-name-not-set##"
+      },
+      "firewallPolicyManagementPublicIPAddressId": {
+        "type": "String",
+        "value": "##firewall-policy-management-public-i-p-address-id-not-set##"
+      },
+      "bastionName": {
+        "type": "String",
+        "value": "##bastion-name-not-set##"
+      },
+      "bastionPublicIpAddressName": {
+        "type": "String",
+        "value": "##bastion-public-ip-address-name-not-set##"
+      },
+      "bastionPublicIPAddressId": {
+        "type": "String",
+        "value": ""
+      },
+      "bastionNsgName": {
+        "type": "String",
+        "value": "##bastion-nsg-name-not-set##"
+      },
+      "bastionNsgId": {
+        "type": "String",
+        "value": "##bastion-nsg-id-not-set##"
+      },
+      "natGatewaysWithNewPublicIpAddress": {
+        "type": "Array",
+        "value": []
+      },
+      "natGatewaysWithoutNewPublicIpAddress": {
+        "type": "Array",
+        "value": []
+      },
+      "natGatewayPublicIpAddressesNewNames": {
+        "type": "Array",
+        "value": []
+      },
+      "networkSecurityGroupsNew": {
+        "type": "Array",
+        "value": []
+      },
+      "ipv6Enabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "subnetCount": {
+        "type": "Int",
+        "value": 1
+      },
+      "addressSpaceStartingAddressChanged": {
+        "type": "Bool",
+        "value": false
+      },
+      "addressSpaceAddressSizeChanged": {
+        "type": "Bool",
+        "value": false
+      },
+      "defaultSubnetChanged": {
+        "type": "Bool",
+        "value": true
+      },
+      "subnetsInfo": {
+        "type": "Array",
+        "value": [
+          {
+            "cidr": "10.0.0.0/24",
+            "name": "Default",
+            "natGw": "none",
+            "nsg": "none",
+            "udr": "none"
+          }
+        ]
+      },
+      "ipamPools": {
+        "type": "Array",
+        "value": []
+      },
+      "networkManager": {
+        "type": "Object",
+        "value": {}
+      },
+      "createNetworkManager": {
+        "type": "Bool",
+        "value": false
+      },
+      "networkManagerName": {
+        "type": "String",
+        "value": "##network-manager-name-not-set##"
+      },
+      "avnmResourceGroup": {
+        "type": "String",
+        "value": "##avnm-resource-group-not-set##"
+      },
+      "avnmSubscriptionId": {
+        "type": "String",
+        "value": "##avnm-subscription-id-not-set##"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2025-09-18T15:23:29.1210459Z",
+    "duration": "PT7.6294766S",
+    "correlationId": "8c7695c3-629f-41c3-b492-2641b47ae46b",
+    "providers": [
+      {
+        "namespace": "Microsoft.Network",
+        "resourceTypes": [
+          {
+            "resourceType": "virtualNetworks",
+            "locations": [
+              "uksouth"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [],
+    "outputResources": [
+      {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Network/virtualNetworks/AzureProject-VNet"
+      }
+    ],
+    "validationLevel": "Template"
+  },
+  "tags": {
+    "primaryResourceId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourcegroups/AzureProject-RG/providers/Microsoft.Network/virtualNetworks/AzureProject-VNet",
+    "marketplaceItemId": "Microsoft.VirtualNetwork"
+  }
+}

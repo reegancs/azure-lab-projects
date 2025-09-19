@@ -1,0 +1,307 @@
+{
+  "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-jammy-2-20250918181302",
+  "name": "CreateVm-canonical.0001-com-ubuntu-server-jammy-2-20250918181302",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourcegroups/AzureProject-RG/providers/Microsoft.Compute/virtualMachines/AzureProjectVM",
+    "marketplaceItemId": "Microsoft.VirtualMachine-ARM",
+    "provisioningHash": "SolutionProvider"
+  },
+  "properties": {
+    "templateHash": "241110993038597107",
+    "parameters": {
+      "location": {
+        "type": "String",
+        "value": "uksouth"
+      },
+      "networkInterfaceName": {
+        "type": "String",
+        "value": "azureprojectvm403"
+      },
+      "networkSecurityGroupName": {
+        "type": "String",
+        "value": "AzureProjectVM-nsg"
+      },
+      "networkSecurityGroupRules": {
+        "type": "Array",
+        "value": [
+          {
+            "name": "SSH",
+            "properties": {
+              "priority": 300,
+              "protocol": "TCP",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "22"
+            }
+          }
+        ]
+      },
+      "subnetId": {
+        "type": "String",
+        "value": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Network/virtualNetworks/AzureProject-VNet/subnets/default"
+      },
+      "virtualNetworkId": {
+        "type": "String",
+        "value": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Network/virtualNetworks/AzureProject-VNet"
+      },
+      "publicIpAddressName": {
+        "type": "String",
+        "value": "AzureProjectVM-ip"
+      },
+      "publicIpAddressType": {
+        "type": "String",
+        "value": "Static"
+      },
+      "publicIpAddressSku": {
+        "type": "String",
+        "value": "Standard"
+      },
+      "pipDeleteOption": {
+        "type": "String",
+        "value": "Delete"
+      },
+      "virtualMachineName": {
+        "type": "String",
+        "value": "AzureProjectVM"
+      },
+      "virtualMachineComputerName": {
+        "type": "String",
+        "value": "AzureProjectVM"
+      },
+      "virtualMachineRG": {
+        "type": "String",
+        "value": "AzureProject-RG"
+      },
+      "osDiskType": {
+        "type": "String",
+        "value": "Premium_LRS"
+      },
+      "osDiskDeleteOption": {
+        "type": "String",
+        "value": "Delete"
+      },
+      "virtualMachineSize": {
+        "type": "String",
+        "value": "Standard_B1s"
+      },
+      "nicDeleteOption": {
+        "type": "String",
+        "value": "Delete"
+      },
+      "hibernationEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "adminUsername": {
+        "type": "String",
+        "value": "azureuser"
+      },
+      "adminPassword": {
+        "type": "SecureString"
+      },
+      "enablePeriodicAssessment": {
+        "type": "String",
+        "value": "AutomaticByPlatform"
+      },
+      "patchMode": {
+        "type": "String",
+        "value": "AutomaticByPlatform"
+      },
+      "rebootSetting": {
+        "type": "String",
+        "value": "IfRequired"
+      },
+      "autoShutdownStatus": {
+        "type": "String",
+        "value": "Enabled"
+      },
+      "autoShutdownTime": {
+        "type": "String",
+        "value": "00:00"
+      },
+      "autoShutdownTimeZone": {
+        "type": "String",
+        "value": "UTC"
+      },
+      "autoShutdownNotificationStatus": {
+        "type": "String",
+        "value": "Enabled"
+      },
+      "autoShutdownNotificationLocale": {
+        "type": "String",
+        "value": "en"
+      },
+      "autoShutdownNotificationEmail": {
+        "type": "String",
+        "value": "reegansidaway@icloud.com"
+      },
+      "healthExtensionProtocol": {
+        "type": "String",
+        "value": "http"
+      },
+      "healthExtensionPort": {
+        "type": "Int",
+        "value": 80
+      },
+      "healthExtensionInterval": {
+        "type": "Int",
+        "value": 5
+      },
+      "healthExtensionNumberOfProbes": {
+        "type": "Int",
+        "value": 5
+      },
+      "healthExtensionRequestPath": {
+        "type": "String",
+        "value": "/"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2025-09-18T17:22:24.8491461Z",
+    "duration": "PT1M39.4448444S",
+    "correlationId": "c54d64c6-d10a-47c7-8959-9b6b031fe206",
+    "providers": [
+      {
+        "namespace": "Microsoft.Network",
+        "resourceTypes": [
+          {
+            "resourceType": "networkInterfaces",
+            "locations": [
+              "uksouth"
+            ]
+          },
+          {
+            "resourceType": "networkSecurityGroups",
+            "locations": [
+              "uksouth"
+            ]
+          },
+          {
+            "resourceType": "publicIpAddresses",
+            "locations": [
+              "uksouth"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Compute",
+        "resourceTypes": [
+          {
+            "resourceType": "virtualMachines",
+            "locations": [
+              "uksouth"
+            ]
+          },
+          {
+            "resourceType": "virtualMachines/extensions",
+            "locations": [
+              "uksouth"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.DevTestLab",
+        "resourceTypes": [
+          {
+            "resourceType": "schedules",
+            "locations": [
+              "uksouth"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Network/networkSecurityGroups/AzureProjectVM-nsg",
+            "resourceType": "Microsoft.Network/networkSecurityGroups",
+            "resourceName": "AzureProjectVM-nsg"
+          },
+          {
+            "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Network/publicIpAddresses/AzureProjectVM-ip",
+            "resourceType": "Microsoft.Network/publicIpAddresses",
+            "resourceName": "AzureProjectVM-ip"
+          }
+        ],
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Network/networkInterfaces/azureprojectvm403",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "azureprojectvm403"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Network/networkInterfaces/azureprojectvm403",
+            "resourceType": "Microsoft.Network/networkInterfaces",
+            "resourceName": "azureprojectvm403"
+          }
+        ],
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Compute/virtualMachines/AzureProjectVM",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "AzureProjectVM"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Compute/virtualMachines/AzureProjectVM",
+            "resourceType": "Microsoft.Compute/virtualMachines",
+            "resourceName": "AzureProjectVM"
+          }
+        ],
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.DevTestLab/schedules/shutdown-computevm-AzureProjectVM",
+        "resourceType": "Microsoft.DevTestLab/schedules",
+        "resourceName": "shutdown-computevm-AzureProjectVM"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Compute/virtualMachines/AzureProjectVM",
+            "resourceType": "Microsoft.Compute/virtualMachines",
+            "resourceName": "AzureProjectVM"
+          }
+        ],
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Compute/virtualMachines/AzureProjectVM/extensions/HealthExtension",
+        "resourceType": "Microsoft.Compute/virtualMachines/extensions",
+        "resourceName": "AzureProjectVM/HealthExtension"
+      }
+    ],
+    "outputs": {
+      "adminUsername": {
+        "type": "String",
+        "value": "azureuser"
+      }
+    },
+    "outputResources": [
+      {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Compute/virtualMachines/AzureProjectVM"
+      },
+      {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Compute/virtualMachines/AzureProjectVM/extensions/HealthExtension"
+      },
+      {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.DevTestLab/schedules/shutdown-computevm-AzureProjectVM"
+      },
+      {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Network/networkInterfaces/azureprojectvm403"
+      },
+      {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Network/networkSecurityGroups/AzureProjectVM-nsg"
+      },
+      {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Network/publicIpAddresses/AzureProjectVM-ip"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}

@@ -1,0 +1,228 @@
+{
+  "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Resources/deployments/azureprojectstorage01_1758221498557",
+  "name": "azureprojectstorage01_1758221498557",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourcegroups/AzureProject-RG/providers/Microsoft.Storage/storageAccounts/azureprojectstorage01",
+    "marketplaceItemId": "Microsoft.StorageAccount",
+    "provisioningHash": "FileStorage"
+  },
+  "properties": {
+    "templateHash": "8965022899464222791",
+    "parameters": {
+      "location": {
+        "type": "String",
+        "value": "uksouth"
+      },
+      "storageAccountName": {
+        "type": "String",
+        "value": "azureprojectstorage01"
+      },
+      "accountType": {
+        "type": "String",
+        "value": "Standard_LRS"
+      },
+      "kind": {
+        "type": "String",
+        "value": "StorageV2"
+      },
+      "minimumTlsVersion": {
+        "type": "String",
+        "value": "TLS1_2"
+      },
+      "supportsHttpsTrafficOnly": {
+        "type": "Bool",
+        "value": true
+      },
+      "allowBlobPublicAccess": {
+        "type": "Bool",
+        "value": false
+      },
+      "allowSharedKeyAccess": {
+        "type": "Bool",
+        "value": true
+      },
+      "defaultOAuth": {
+        "type": "Bool",
+        "value": false
+      },
+      "accessTier": {
+        "type": "String",
+        "value": "Hot"
+      },
+      "publicNetworkAccess": {
+        "type": "String",
+        "value": "Enabled"
+      },
+      "allowCrossTenantReplication": {
+        "type": "Bool",
+        "value": false
+      },
+      "networkAclsBypass": {
+        "type": "String",
+        "value": "AzureServices"
+      },
+      "networkAclsDefaultAction": {
+        "type": "String",
+        "value": "Allow"
+      },
+      "networkAclsIpRules": {
+        "type": "Array",
+        "value": []
+      },
+      "networkAclsIpv6Rules": {
+        "type": "Array",
+        "value": []
+      },
+      "publishIpv6Endpoint": {
+        "type": "Bool",
+        "value": false
+      },
+      "dnsEndpointType": {
+        "type": "String",
+        "value": "Standard"
+      },
+      "largeFileSharesState": {
+        "type": "String",
+        "value": "Enabled"
+      },
+      "keySource": {
+        "type": "String",
+        "value": "Microsoft.Storage"
+      },
+      "encryptionEnabled": {
+        "type": "Bool",
+        "value": true
+      },
+      "keyTypeForTableAndQueueEncryption": {
+        "type": "String",
+        "value": "Account"
+      },
+      "infrastructureEncryptionEnabled": {
+        "type": "Bool",
+        "value": false
+      },
+      "isContainerRestoreEnabled": {
+        "type": "Bool",
+        "value": true
+      },
+      "containerRestorePeriodDays": {
+        "type": "Int",
+        "value": 6
+      },
+      "isBlobSoftDeleteEnabled": {
+        "type": "Bool",
+        "value": true
+      },
+      "blobSoftDeleteRetentionDays": {
+        "type": "Int",
+        "value": 7
+      },
+      "isContainerSoftDeleteEnabled": {
+        "type": "Bool",
+        "value": true
+      },
+      "containerSoftDeleteRetentionDays": {
+        "type": "Int",
+        "value": 7
+      },
+      "changeFeed": {
+        "type": "Bool",
+        "value": true
+      },
+      "changeFeedRetentionDays": {
+        "type": "Int",
+        "value": 14
+      },
+      "isVersioningEnabled": {
+        "type": "Bool",
+        "value": true
+      },
+      "isShareSoftDeleteEnabled": {
+        "type": "Bool",
+        "value": true
+      },
+      "shareSoftDeleteRetentionDays": {
+        "type": "Int",
+        "value": 7
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2025-09-18T18:52:25.5459607Z",
+    "duration": "PT23.396244S",
+    "correlationId": "d90cae0a-713e-4110-b862-67a1a3960d7c",
+    "providers": [
+      {
+        "namespace": "Microsoft.Storage",
+        "resourceTypes": [
+          {
+            "resourceType": "storageAccounts",
+            "locations": [
+              "uksouth"
+            ]
+          },
+          {
+            "resourceType": "storageAccounts/blobServices",
+            "locations": [
+              null
+            ]
+          },
+          {
+            "resourceType": "storageAccounts/fileservices",
+            "locations": [
+              null
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Storage/storageAccounts/azureprojectstorage01",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "azureprojectstorage01"
+          }
+        ],
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Storage/storageAccounts/azureprojectstorage01/blobServices/default",
+        "resourceType": "Microsoft.Storage/storageAccounts/blobServices",
+        "resourceName": "azureprojectstorage01/default"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Storage/storageAccounts/azureprojectstorage01",
+            "resourceType": "Microsoft.Storage/storageAccounts",
+            "resourceName": "azureprojectstorage01"
+          },
+          {
+            "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Storage/storageAccounts/azureprojectstorage01/blobServices/default",
+            "resourceType": "Microsoft.Storage/storageAccounts/blobServices",
+            "resourceName": "azureprojectstorage01/default"
+          }
+        ],
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Storage/storageAccounts/azureprojectstorage01/fileservices/default",
+        "resourceType": "Microsoft.Storage/storageAccounts/fileservices",
+        "resourceName": "azureprojectstorage01/default"
+      }
+    ],
+    "outputs": {},
+    "outputResources": [
+      {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Storage/storageAccounts/azureprojectstorage01"
+      },
+      {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Storage/storageAccounts/azureprojectstorage01/blobServices/default"
+      },
+      {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Storage/storageAccounts/azureprojectstorage01/fileservices/default"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}

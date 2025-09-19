@@ -1,0 +1,65 @@
+[
+  {
+    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Resources/deployments/azureprojectstorage01_1758221498557/operations/CC6752CB401BCDCC",
+    "operationId": "CC6752CB401BCDCC",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-09-18T18:52:02.6632346Z",
+      "duration": "PT22.6639734S",
+      "trackingId": "7a6114df-fe60-43e8-bc39-7052bffe3c7e",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Storage/storageAccounts/azureprojectstorage01/fileservices/default",
+        "resourceType": "Microsoft.Storage/storageAccounts/fileservices",
+        "resourceName": "azureprojectstorage01/default"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Resources/deployments/azureprojectstorage01_1758221498557/operations/352C79039FFA22E0",
+    "operationId": "352C79039FFA22E0",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-09-18T18:52:02.6632346Z",
+      "duration": "PT22.3982898S",
+      "trackingId": "ebe27f53-ddb7-45b4-b345-fda146c1da48",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Storage/storageAccounts/azureprojectstorage01/blobServices/default",
+        "resourceType": "Microsoft.Storage/storageAccounts/blobServices",
+        "resourceName": "azureprojectstorage01/default"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Resources/deployments/azureprojectstorage01_1758221498557/operations/6C6BB8112B3E8794",
+    "operationId": "6C6BB8112B3E8794",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-09-18T18:52:02.6632346Z",
+      "duration": "PT21.4452156S",
+      "trackingId": "06e3634c-3e2e-4761-977b-ea13b9771c4b",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Storage/storageAccounts/azureprojectstorage01",
+        "resourceType": "Microsoft.Storage/storageAccounts",
+        "resourceName": "azureprojectstorage01"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Resources/deployments/azureprojectstorage01_1758221498557/operations/08584433853633251455",
+    "operationId": "08584433853633251455",
+    "properties": {
+      "provisioningOperation": "EvaluateDeploymentOutput",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-09-18T18:52:02.6632346Z",
+      "duration": "PT22.8358586S",
+      "trackingId": "276d319e-0f26-4ffd-bdcb-3548035b0a33",
+      "statusCode": "OK"
+    }
+  }
+]

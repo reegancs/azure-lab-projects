@@ -1,0 +1,31 @@
+[
+  {
+    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Resources/deployments/AzureProject-VNet-1758208999607/operations/97EFF38DBF8A5F5F",
+    "operationId": "97EFF38DBF8A5F5F",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-09-18T15:23:21.9285242Z",
+      "duration": "PT6.895625S",
+      "trackingId": "25a8fe30-b245-43f7-94d1-f0b0730a72be",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Network/virtualNetworks/AzureProject-VNet",
+        "resourceType": "Microsoft.Network/virtualNetworks",
+        "resourceName": "AzureProject-VNet"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/AzureProject-RG/providers/Microsoft.Resources/deployments/AzureProject-VNet-1758208999607/operations/08584433978839859489",
+    "operationId": "08584433978839859489",
+    "properties": {
+      "provisioningOperation": "EvaluateDeploymentOutput",
+      "provisioningState": "Succeeded",
+      "timestamp": "2025-09-18T15:23:21.9285242Z",
+      "duration": "PT7.1455892S",
+      "trackingId": "bf85b93d-dada-4424-96f6-eaeaff559093",
+      "statusCode": "OK"
+    }
+  }
+]
