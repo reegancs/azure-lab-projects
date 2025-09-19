@@ -18,7 +18,7 @@ What I Wanted to Do
 ## Resource Group  
 
 **Screenshot:**  
-![Resource Group Creation](./Azure%20-%20Project%201/Azure%20-%20Resource%20Group/resource-group-creation.png)
+![Resource Group Creation](./Azure%20-%20Resource%20Group/resource-group-creation.png)
 
 - **Name:** `AzureProject-RG`  
 - **Region:** UK South  
@@ -29,8 +29,8 @@ What I Wanted to Do
 ## Virtual Network  
 
 **Screenshots:**  
-- [IP Address Space](./Azure%20-%20Project%201/Azure%20-%20Virtual%20Network/vnet-ip-addresses.png)  
-- [Tags](./Azure%20-%20Project%201/Azure%20-%20Virtual%20Network/vnet-tags.png)  
+- [IP Address Space](./Azure%20-%20Virtual%20Network/vnet-ip-addresses.png)  
+- [Tags](./Azure%20-%20Virtual%20Network/vnet-tags.png)  
 
 - **Name:** `AzureProject-VNet`  
 - **Address Space:** `10.0.0.0/16`  
@@ -42,7 +42,7 @@ What I Wanted to Do
 ## Network Security Group  
 
 **Screenshot:**  
-![NSG Rule](./Azure%20-%20Project%201/Azure%20-%20Network%20Security%20Group/secure-ssh-nsg-rule.png)
+![NSG Rule](./Azure%20-%20Network%20Security%20Group/secure-ssh-nsg-rule.png)
 
 - **Rule:** Allow SSH (port 22)  
 - **Source:** My public IP address only (not open to all)  
@@ -53,11 +53,11 @@ What I Wanted to Do
 ## Virtual Machine  
 
 **Screenshots:**  
-- [VM Basics](./Azure%20-%20Project%201/Azure%20-%20Virtual%20Machine/vm-basics.png)  
-- [VM Disks](./Azure%20-%20Project%201/Azure%20-%20Virtual%20Machine/vm-disk.png)  
-- [VM Networking](./Azure%20-%20Project%201/Azure%20-%20Virtual%20Machine/vm-overview.png)  
-- [VM Monitoring](./Azure%20-%20Project%201/Azure%20-%20Virtual%20Machine/vm-monitoring.png)  
-- [SSH Login](./Azure%20-%20Project%201/Azure%20-%20Virtual%20Machine/vm-ssh-connection-success.png)
+- [VM Basics](./Azure%20-%20Virtual%20Machine/vm-basics.png)  
+- [VM Disks](./Azure%20-%20Virtual%20Machine/vm-disk.png)  
+- [VM Networking](./Azure%20-%20Virtual%20Machine/vm-overview.png)  
+- [VM Monitoring](./Azure%20-%20Virtual%20Machine/vm-monitoring.png)  
+- [SSH Login](./Azure%20-%20Virtual%20Machine/vm-ssh-connection-success.png)
 
 - **OS:** Ubuntu Server 22.04 LTS  
 - **Size:** Standard B1s (Free Tier eligible)  
@@ -69,10 +69,10 @@ What I Wanted to Do
 ## Storage Account  
 
 **Screenshots:**  
-- [Basics](./Azure%20-%20Project%201/Azure%20-%20Storage%20Account/storage-account-basics.png)  
-- [Networking](./Azure%20-%20Project%201/Azure%20-%20Storage%20Account/storage-account-network.png)  
-- [Data Protection](./Azure%20-%20Project%201/Azure%20-%20Storage%20Account/storage-account-data-protection.png)  
-- [Tags](./Azure%20-%20Project%201/Azure%20-%20Storage%20Account/storage-account-tags.png)
+- [Basics](./Azure%20-%20Storage%20Account/storage-account-basics.png)  
+- [Networking](./Azure%20-%20Storage%20Account/storage-account-network.png)  
+- [Data Protection](./Azure%20-%20Storage%20Account/storage-account-data-protection.png)  
+- [Tags](./Azure%20-%20Storage%20Account/storage-account-tags.png)
 
 - **Name:** `azureprojectstorage01`  
 - **Replication:** Locally Redundant Storage (LRS)  
@@ -83,9 +83,9 @@ What I Wanted to Do
 ## ARM Templates  
 
 **Files:**  
-- [VNet Deployment Template](./Azure%20-%20Project%201/Azure%20-%20Virtual%20Network/vnet-deployment/deployment.json)  
-- [VM Deployment Template](./Azure%20-%20Project%201/Azure%20-%20Virtual%20Machine/vm-deployment/deployment.json)  
-- [Storage Account Template](./Azure%20-%20Project%201/Azure%20-%20Storage%20Account/storage-account-deployment/deployment.json)  
+- [VNet Deployment Template](./Azure%20-%20Virtual%20Network/vnet-deployment/deployment.json)  
+- [VM Deployment Template](./Azure%20-%20Virtual%20Machine/vm-deployment/deployment.json)  
+- [Storage Account Template](./Azure%20-%20Storage%20Account/storage-account-deployment/deployment.json)  
 
 Exported all resources as ARM templates so the entire lab setup can be quickly redeployed in the future or shared as infrastructure-as-code.
 
@@ -93,10 +93,10 @@ Exported all resources as ARM templates so the entire lab setup can be quickly r
 
 ## Security Measures  
 
-- Restricted SSH access to my IP only  
-- Enabled soft delete and versioning for blob storage to protect against accidental deletion  
+- Restricted SSH access to my IP only 
+- Enabled soft delete and versioning for blob storage to protect against accidental deletion 
 - Used NSG to limit inbound connections to block unwanted access attempts  
-- Chose least privilege (e.g., public access on storage) to keep sensitive files secure  
+- Chose least privilege (e.g., public access on storage) to keep sensitive files secure
 
 ---
 
